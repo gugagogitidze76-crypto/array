@@ -110,3 +110,79 @@ if (index !== -1) {
 l.students.push("Bacho", "Salome");
 
 console.log(l.students);
+
+const studentsData = [
+  {
+    id: 1,
+    personal: {
+      name: "Nia",
+      age: 21,
+      contact: {
+        email: "Nia@mail.com",
+        phone: {
+          countryCode: "+995",
+          number: "555123456",
+        },
+      },
+    },
+    education: {
+      university: "Ilia State University",
+      skills: ["JavaScript", "React", "React Native"],
+    },
+  },
+  {
+    id: 2,
+    personal: {
+      name: "Ana",
+      age: 22,
+      contact: {
+        email: "ana@mail.com",
+        phone: {
+          countryCode: "+995",
+          number: "599987654",
+        },
+      },
+    },
+    education: {
+      university: "TSU",
+      skills: ["HTML", "CSS", "JavaScript"],
+    },
+  },
+];
+
+const ana = studentsData[1];
+
+console.log("Name:", ana.personal.name);
+console.log("Age:", ana.personal.age);
+console.log("Email:", ana.personal.contact.email);
+console.log(
+  "Phone:",
+  ana.personal.contact.phone.countryCode + ana.personal.contact.phone.number
+);
+
+const studentData = [
+  {
+    id: 1,
+    personal: {
+      name: "Nia",
+      age: 21,
+      contact: {
+        email: "Nia@mail.com",
+        phone: {
+          countryCode: "+995",
+          number: "555123456",
+        },
+      },
+    },
+    education: {
+      university: "Ilia State University",
+      skills: ["JavaScript", "React", "React Native"],
+    },
+  },
+];
+
+const nia = studentData[0];
+
+console.log("name", nia.personal.name);
+console.log("University:", nia.education.university);
+console.log("Skills:", nia.education.skills);
